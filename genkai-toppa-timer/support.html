@@ -22,6 +22,30 @@ li { margin-bottom:6px; }</style></head>
 <li><strong>サブスクリプションの解約：</strong>iOSの「設定」＞ Apple Account ＞「サブスクリプション」から、更新日の24時間前までに解約してください。</li>
 <li><strong>広告のプライバシー設定：</strong>同意の確認が必要な地域では、アプリの設定に「広告のプライバシー設定」が表示されます。</li>
 </ul>
+<h2>消費カロリー推定の出典と計算条件</h2>
+<p><strong>出典：</strong>消費カロリーの推定に使う運動強度（MET）は、<em>2024 Adult Compendium of Physical Activities</em>（<a href="https://pacompendium.com/adult-compendium/">pacompendium.com</a>）の値を使っています。本アプリは同書の作成者・提供元とは関係がなく、同書が本アプリの内容を承認・保証するものではありません。</p>
+<p><strong>原典から引用している値（原典のコードと一致）：</strong></p>
+<ul>
+<li>筋トレ（複数種目・8〜15回） 3.5（02054）</li>
+<li>自重のレジスタンス運動 3.0（02056）</li>
+<li>カリステニクス・軽め（クランチ、プランクなど） 2.8（02024）</li>
+<li>カリステニクス・高強度（バーピーなど） 7.5（02020）</li>
+<li>ローイングマシン（100W未満・中程度） 5.0（02071）</li>
+<li>固定式エアロバイク（一般） 6.8（01200）</li>
+<li>エリプティカル（中程度） 5.0（02048）</li>
+<li>縄跳び（一般） 11.0（02068）</li>
+<li>ステアクライマー（一般） 9.3（02065）</li>
+</ul>
+<p><strong>本アプリ独自の条件（原典の値ではありません）：</strong></p>
+<ul>
+<li>種目ごと・強度ごとの固有値は使わず、分類ごとに1つの一般的な値を使っています。</li>
+<li>トレッドミルは速度が分からないため、5.0を仮の値として使っています。</li>
+<li>ウォームアップは、分類の値と3.5のうち小さい方を使います。</li>
+<li>回数式のセットは、1回あたり3秒（跳躍系は2秒）と仮定して時間を計算します。</li>
+<li>消費エネルギーは「(MET − 1) × 体重 × 時間」で計算し、休憩時間は含めません。</li>
+<li>結果には、−40%〜＋50%の幅を持たせています。</li>
+</ul>
+<p>表示される値は推定で、実測値ではありません。個人差があるため、目安としてお使いください。</p>
 <h2>お問い合わせ・不具合報告</h2>
 <p>窓口はGitHub Issuesです。GitHubアカウントでのログインが必要で、投稿内容はインターネット上に公開されます。個別の非公開相談窓口ではありません。この窓口は開発者のほかのアプリ（なかまーじゃん手帳）と共通のため、<strong>件名の先頭に「【限界筋トレタイマー】」とアプリ名を書いてください。</strong></p>
 <p>お知らせいただきたい情報：端末の機種・iOSのバージョン、アプリのバージョン、問題が起きるまでの操作と期待した動作、表示されたエラー文（個人情報を除く）。</p>
@@ -36,6 +60,30 @@ li { margin-bottom:6px; }</style></head>
 <li><strong>Cancelling the subscription:</strong> in iOS Settings &gt; Apple Account &gt; Subscriptions, cancel at least 24 hours before the renewal date.</li>
 <li><strong>Ad privacy settings:</strong> in regions where consent is required, "Ad privacy settings" appears in the app's settings.</li>
 </ul>
+<h2>Source and assumptions for the calorie estimate</h2>
+<p><strong>Source:</strong> The exercise intensities (METs) used to estimate calories burned come from the <em>2024 Adult Compendium of Physical Activities</em> (<a href="https://pacompendium.com/adult-compendium/">pacompendium.com</a>). The App is not affiliated with the authors or publishers of the Compendium, and the Compendium does not endorse or guarantee the App.</p>
+<p><strong>Values taken from the original (matching the original codes):</strong></p>
+<ul>
+<li>Resistance training, multiple exercises, 8-15 reps 3.5 (02054)</li>
+<li>Body weight resistance exercises 3.0 (02056)</li>
+<li>Calisthenics, light effort (crunches, planks, etc.) 2.8 (02024)</li>
+<li>Calisthenics, vigorous effort (burpees, etc.) 7.5 (02020)</li>
+<li>Rowing machine (under 100 W, moderate effort) 5.0 (02071)</li>
+<li>Stationary bike (general) 6.8 (01200)</li>
+<li>Elliptical trainer (moderate effort) 5.0 (02048)</li>
+<li>Rope skipping (general) 11.0 (02068)</li>
+<li>Stair climber (general) 9.3 (02065)</li>
+</ul>
+<p><strong>Conditions specific to the App (not values from the original):</strong></p>
+<ul>
+<li>The App does not use exercise-specific or intensity-specific values; it uses one general value for each category.</li>
+<li>For the treadmill the speed is unknown, so 5.0 is used as a provisional value.</li>
+<li>For warm-up sets, the smaller of the category value and 3.5 is used.</li>
+<li>For rep-based sets, the duration is calculated by assuming 3 seconds per repetition (2 seconds for jumping movements).</li>
+<li>Energy is calculated as (MET − 1) × body weight × time, and rest time is not included.</li>
+<li>Results are shown with a range of −40% to +50%.</li>
+</ul>
+<p>The values shown are estimates, not measurements. Because of individual differences, please use them only as a guide.</p>
 <h2>Contact and bug reports</h2>
 <p>Our contact channel is GitHub Issues. A GitHub account is required and what you post is public on the internet. It is not a private channel. This channel is shared with the developer's other app, so <strong>please start the title with the app name, "[限界筋トレタイマー / Limit Break Workout Timer]".</strong></p>
 <p>Please include: device model and iOS version, app version, the steps before the problem and what you expected, and any error message (without personal information).</p>
@@ -50,6 +98,30 @@ li { margin-bottom:6px; }</style></head>
 <li><strong>取消訂閱：</strong>請至 iOS「設定」＞ Apple 帳號 ＞「訂閱項目」，於續訂日前至少 24 小時取消。</li>
 <li><strong>廣告隱私設定：</strong>在需要同意的地區，App 設定中會顯示「廣告隱私設定」。</li>
 </ul>
+<h2>消耗熱量推估的出處與計算條件</h2>
+<p><strong>出處：</strong>推估消耗熱量所用的運動強度（MET）採用 <em>2024 Adult Compendium of Physical Activities</em>（<a href="https://pacompendium.com/adult-compendium/">pacompendium.com</a>）的數值。本應用程式與該文獻的作者或提供單位無關，該文獻亦未認可或保證本應用程式的內容。</p>
+<p><strong>引用自原文獻的數值（與原文獻代碼一致）：</strong></p>
+<ul>
+<li>重量訓練（多種動作、8–15 下） 3.5（02054）</li>
+<li>徒手阻力訓練 3.0（02056）</li>
+<li>徒手健身操・輕度（捲腹、棒式等） 2.8（02024）</li>
+<li>徒手健身操・高強度（波比跳等） 7.5（02020）</li>
+<li>划船機（低於 100 瓦、中等強度） 5.0（02071）</li>
+<li>固定式健身車（一般） 6.8（01200）</li>
+<li>橢圓機（中等強度） 5.0（02048）</li>
+<li>跳繩（一般） 11.0（02068）</li>
+<li>階梯機（一般） 9.3（02065）</li>
+</ul>
+<p><strong>本應用程式自訂的條件（非原文獻的數值）：</strong></p>
+<ul>
+<li>不使用各動作或各強度的專屬數值，而是依分類各使用一個一般數值。</li>
+<li>跑步機因速度不明，暫以 5.0 作為假定值。</li>
+<li>暖身組使用分類數值與 3.5 中較小者。</li>
+<li>計次式的組數，假定每下 3 秒（跳躍類 2 秒）來計算時間。</li>
+<li>消耗能量以「(MET − 1) × 體重 × 時間」計算，不含休息時間。</li>
+<li>結果帶有 −40% 至 +50% 的範圍。</li>
+</ul>
+<p>所顯示的數值為推估值，並非實測值。因個人差異，請僅作為參考。</p>
 <h2>聯絡與問題回報</h2>
 <p>聯絡管道為 GitHub Issues。需要 GitHub 帳號，且您發佈的內容會公開於網路上，並非私人諮詢管道。此管道與開發者的其他 App 共用，因此<strong>請在標題開頭寫上 App 名稱「【限界筋トレタイマー】」。</strong></p>
 <p>請提供：裝置型號與 iOS 版本、App 版本、問題發生前的操作與預期行為、顯示的錯誤訊息（請排除個人資訊）。</p>
@@ -64,6 +136,30 @@ li { margin-bottom:6px; }</style></head>
 <li><strong>إلغاء الاشتراك:</strong> من إعدادات iOS &gt; حساب Apple &gt; الاشتراكات، ألغِ قبل موعد التجديد بـ 24 ساعة على الأقل.</li>
 <li><strong>إعدادات خصوصية الإعلانات:</strong> في المناطق التي يلزم فيها طلب الموافقة تظهر «إعدادات خصوصية الإعلانات» في إعدادات التطبيق.</li>
 </ul>
+<h2>مصدر تقدير السعرات المحروقة وشروط الحساب</h2>
+<p><strong>المصدر:</strong> تستند قيم شدة النشاط (MET) المستخدمة في تقدير السعرات المحروقة إلى <em>2024 Adult Compendium of Physical Activities</em> (<a href="https://pacompendium.com/adult-compendium/">pacompendium.com</a>). هذا التطبيق غير مرتبط بمؤلفي المرجع أو الجهة التي تنشره، ولا يعني المرجع تأييد التطبيق أو ضمان محتواه.</p>
+<p><strong>القيم المأخوذة من المرجع (مطابقة لرموز المرجع):</strong></p>
+<ul>
+<li>تمارين المقاومة بالأوزان (عدة تمارين، 8–15 تكرارًا) 3.5 (02054)</li>
+<li>تمارين المقاومة بوزن الجسم 3.0 (02056)</li>
+<li>تمارين كاليستنكس خفيفة (مثل الكرنش والبلانك) 2.8 (02024)</li>
+<li>تمارين كاليستنكس شديدة (مثل البيربي) 7.5 (02020)</li>
+<li>جهاز التجديف (أقل من 100 واط، متوسط) 5.0 (02071)</li>
+<li>دراجة ثابتة (عام) 6.8 (01200)</li>
+<li>جهاز الإليبتيكال (متوسط) 5.0 (02048)</li>
+<li>نط الحبل (عام) 11.0 (02068)</li>
+<li>جهاز صعود الدرج (عام) 9.3 (02065)</li>
+</ul>
+<p><strong>شروط خاصة بالتطبيق (وليست قيمًا من المرجع):</strong></p>
+<ul>
+<li>لا تُستخدم قيم خاصة بكل تمرين أو بكل شدة، بل قيمة عامة واحدة لكل فئة.</li>
+<li>جهاز المشي: السرعة غير معروفة، لذا تُستخدم القيمة 5.0 مؤقتًا.</li>
+<li>الإحماء: تُستخدم القيمة الأصغر بين قيمة الفئة و3.5.</li>
+<li>مجموعات التكرار: يُفترض أن التكرار الواحد يستغرق 3 ثوانٍ (ثانيتان للحركات القفزية) لحساب المدة.</li>
+<li>تُحسب الطاقة المصروفة بالصيغة «(MET − 1) × الوزن × الزمن» ولا تشمل وقت الراحة.</li>
+<li>تتضمن النتيجة هامش عدم يقين يتراوح بين 40% أقل و50% أكثر.</li>
+</ul>
+<p>القيم المعروضة تقديرية وليست قياسات فعلية. ونظرًا للفروق الفردية، استخدمها كمؤشر تقريبي فقط.</p>
 <h2>التواصل والإبلاغ عن المشكلات</h2>
 <p>قناة التواصل هي GitHub Issues. يلزم حساب GitHub، وما تنشره يكون علنيًا على الإنترنت وليس قناة خاصة. وهذه القناة مشتركة مع تطبيق آخر للمطوّر، لذا <strong>يُرجى بدء العنوان باسم التطبيق: «[限界筋トレタイマー]».</strong></p>
 <p>يُرجى ذكر: طراز الجهاز وإصدار iOS، وإصدار التطبيق، والخطوات التي سبقت المشكلة والسلوك المتوقع، ونص رسالة الخطأ (دون معلومات شخصية).</p>
