@@ -1,6 +1,6 @@
 {
   "campaignId": "pro-monthly-launch-01",
-  "enabled": false,
-  "offerCode": "",
-  "appStoreURL": ""
+  "enabled": true,
+  "offerCode": "GENKAISHARE",
+  "appStoreURL": "https://apps.apple.com/app/id6833007933"
 }
